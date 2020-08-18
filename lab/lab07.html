@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <head>
  
 <style>
@@ -20,8 +21,13 @@ table {
  height: 10cm ;
 }
 
+ .alert alert-primary  {
+    background-color: red;
+
+}
+
 .box{
-   display: inline-flex;
+     align-items: center;
             }
 
 table,tr:hover {
@@ -45,22 +51,20 @@ td{
 
 </head>
 <body>
-  
-   
-    <h1 align="center">產業新尖兵八月課表</h1>
-   &nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<span style="text-decoration:underline;">姓名:王晶瑩</span>
-    &nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
-    <span style="text-decoration:underline;">所修學分數:30</span>
-    &nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
-    <a  href="https://www.facebook.com/">學分試算</a>
-    &nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
-    <a href="https://www.facebook.com/">註冊課務組</a>
-    &nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
-    <a href="https://www.facebook.com/">逢甲大學</a>
-  
+    
 
-   　<br>
-   <br>
+ 
+    <h1 align="center">產業新尖兵八月課表</h1>
+    <br>
+    <div class="d-flex justify-content-around">
+        <span style="text-decoration:underline;">姓名:王晶瑩</span>
+        <span style="text-decoration:underline;">所修學分數:30</span>
+        <a  href="https://www.facebook.com/">學分試算</a>
+        <a href="https://www.facebook.com/">註冊課務組</a>
+        <a href="https://www.facebook.com/">逢甲大學</a>
+    </div>
+  
+    <br>
     <table border="1" align="center" >
 
         <tr> 
@@ -132,10 +136,20 @@ td{
             <td>web基礎程式設計</td>
             
         </tr>  
-        
          </table>
-          <h3 class= "box"  align="center">～～～～～～～～～～～～～～～～～～～～～～～～～～～～祝大家順利歐趴喔～～～～～～～～～～～～～～～～～～～～～～～～～～～～<h3>
+         <br>
+
+         <div class="p-3 mb-2 bg-danger text-white" style=font-size:0.8cm ; align="center">
+        注意事項: 請務必選課期間內進行電腦選課，若超過期限者一律於8/12進行現場加選<br>
+             
+         </div>
+         
+          
+          <h3 class= "box"  align="center">～～～～祝大家順利歐趴喔～～～～<h3>
             <img src="../image/00.jpg" style="display:block; margin:auto;" />
+
+           
+
 
          
             
@@ -143,4 +157,3 @@ td{
 
 </body>
 </html>
-
