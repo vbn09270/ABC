@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").remove();
+  });
+});
+</script>
+</head>
+
+<body>
+    <p>一些<b>含有標籤的</b>文字</p>
+    <button id="btn1">text()</button>
+    <button id="btn2">html()</button>
+
+    <p>5</p>
+
+    <button id="add">+1</button>
+    <button id="minus">-1</button>
+
+    <p><a href="https://www.facebook.com/" id="link">Facebook</a></p>
+
+    <button>替換 href</button>
+
+    <br>
+    <br>
+
+    <div id="div1" style="height:100px;width:300px;border:1px solid black;background-color:yellow;">
+
+        This is some text in the div.
+        <p>This is a paragraph in the div.</p>
+        <p>This is another paragraph in the div.</p>
+        
+        </div>
+        <br>
+        
+        <button>Remove div element</button>
+        
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-git.min.js"></script>
+    <script>
+        $("button").click(function () {
+            $("#link").attr({
+                "href": "https://google.com",
+                "title": "前往 Google"
+            });
+        });
+
+
+        $("#add").click(function () {
+            $("p").text(function (i, origText) {
+                return parseInt(origText) + 1;
+            });
+        });
+        $("#minus").click(function () {
+            $("p").text(function (i, origText) {
+                return parseInt(origText) - 1;
+            });
+        });
+
+
+        $("#btn1").click(function () {
+            alert("Text: " + $("#test").text());
+        });
+        $("#btn2").click(function () {
+            alert("HTML: " + $("#test").html());
+        });
+    </script>
+
+</body>
+</html>
